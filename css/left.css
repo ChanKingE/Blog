@@ -1,25 +1,44 @@
 @charset "utf-8";
 #left{
 	width: 240px;
-	margin-right: 20px;
+	margin-right: 10px;
 	float: left;
-	position: fixed;
 }
 .top{
 	background-color: rgba(0,0,0,1.00);
 	text-align: center;	
+	-webkit-animation: top-m 1.0s ease-out forwards;
+	-o-animation: top-m 1.0s ease-out forwards;
+	animation: top-m 1.0s ease-out forwards;
+	height: 0;
+}
+@keyframes top-m
+{
+	to{
+		height: 60px;
+	}
 }
 .top a{
 	color: rgba(255,255,255,1.00);
 	line-height: 60px;
 	font-size: 20px;
-	font-weight: bolder;
+	font-weight: 600;
 }
 .center{
 	background-color: rgba(255,255,255,1.00);
 	padding: 20px 0;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	line-height: 40px;
+	-webkit-animation: center-m 1.0s 1.0s ease-out forwards;
+	-o-animation: center-m 1.0s 1.0s ease-out forwards;
+	animation: center-m 1.0s 1.0s ease-out forwards;
+	height: 0;
+}
+@keyframes center-m
+{
+	to{
+		height: 240px;
+	}
 }
 .center .drop{
 	color: rgba(0,0,0,0.25);
@@ -32,12 +51,24 @@
 }
 .center p{
 	margin: 0;
-	padding: 0 30px;
-	font-weight: 500;
+	padding: 0 25px;
+	font-weight: 600;
 	font-size: 15px;
 	-webkit-transition: all .5s;
 	-o-transition: all .5s;
 	transition: all .5s;
+	position:relative;
+	left: -500px;
+	-webkit-animation: p-m 1.0s 2.0s ease-out forwards;
+	-o-animation: p-m 1.0s 2.0s ease-out forwards;
+	animation: p-m 1.0s 2.0s ease-out forwards;
+}
+@keyframes p-m
+{
+	to{
+		height: 40px;
+		left: 0;
+	}
 }
 .center p:hover{
 	background-color: rgba(100,144,213,0.34);
@@ -52,15 +83,26 @@
 }
 .bottom{
 	background-color: rgba(255,255,255,1.00);
+	-webkit-animation: bottom-m 3s 1.5s ease-in-out forwards;
+	-o-animation: bottom-m 3s 1.5s ease-in-out forwards;
+	animation: bottom-m 3s 1.5s ease-in-out forwards;
+	position: sticky;
+	top: 2000px;
+}
+@keyframes bottom-m
+{
+	to{
+		top: 10px;
+	}
 }
 .bottom .icon{
-	width: 150px;
-	margin: 0 auto;
-	padding-top: 25px;
+	padding: 20px 45px;
 }
 .bottom .name{
 	text-align: center;
 	font-weight: bold;
-	margin-top: 10px;
-	padding-bottom: 25px;
+	margin-bottom: 20px;
+}
+.bottom .music{
+	margin-bottom: 5px;
 }
