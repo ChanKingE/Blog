@@ -1,0 +1,44 @@
+@charset "utf-8";
+@keyframes top-m
+{
+	to{
+		height: 60px;
+	}
+}
+@keyframes center-m
+{
+	to{
+		height: 240px;
+	}
+}
+@keyframes p-m
+{
+	to{
+		height: 40px;
+		left: 0;
+	}
+}
+@keyframes bottom-m
+{
+	to{
+		height: 330px;
+	}
+}
+@keyframes bottom-1
+{
+	to{
+		height: 150px;
+	}
+}
+@keyframes bottom-2
+{
+	to{
+		transform: scale(1);
+	}
+}
+@keyframes bottom-3
+{
+	to{
+		height: 86px;
+	}
+}

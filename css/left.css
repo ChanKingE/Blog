@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("left-move.css");
 #left{
 	width: 240px;
 	margin-right: 10px;
@@ -6,17 +7,9 @@
 }
 .top{
 	background-color: rgba(0,0,0,1.00);
-	text-align: center;	
-	-webkit-animation: top-m 1.0s ease-out forwards;
-	-o-animation: top-m 1.0s ease-out forwards;
+	text-align: center;
 	animation: top-m 1.0s ease-out forwards;
 	height: 0;
-}
-@keyframes top-m
-{
-	to{
-		height: 60px;
-	}
 }
 .top a{
 	color: rgba(255,255,255,1.00);
@@ -29,16 +22,8 @@
 	padding: 20px 0;
 	margin-bottom: 10px;
 	line-height: 40px;
-	-webkit-animation: center-m 1.0s 1.0s ease-out forwards;
-	-o-animation: center-m 1.0s 1.0s ease-out forwards;
-	animation: center-m 1.0s 1.0s ease-out forwards;
+	animation: center-m 1.0s 0.5s ease-out forwards;
 	height: 0;
-}
-@keyframes center-m
-{
-	to{
-		height: 240px;
-	}
 }
 .center .drop{
 	color: rgba(0,0,0,0.25);
@@ -59,16 +44,7 @@
 	transition: all .5s;
 	position:relative;
 	left: -500px;
-	-webkit-animation: p-m 1.0s 2.0s ease-out forwards;
-	-o-animation: p-m 1.0s 2.0s ease-out forwards;
-	animation: p-m 1.0s 2.0s ease-out forwards;
-}
-@keyframes p-m
-{
-	to{
-		height: 40px;
-		left: 0;
-	}
+	animation: p-m 1.0s 1.0s ease-out forwards;
 }
 .center p:hover{
 	background-color: rgba(100,144,213,0.34);
@@ -83,26 +59,24 @@
 }
 .bottom{
 	background-color: rgba(255,255,255,1.00);
-	-webkit-animation: bottom-m 3s 1.5s ease-in-out forwards;
-	-o-animation: bottom-m 3s 1.5s ease-in-out forwards;
-	animation: bottom-m 3s 1.5s ease-in-out forwards;
+	animation: bottom-m 1.0s 1.5s ease-in forwards;
 	position: sticky;
-	top: 2000px;
-}
-@keyframes bottom-m
-{
-	to{
-		top: 10px;
-	}
+	height: 0;
+	top: 5px;
 }
 .bottom .icon{
-	padding: 20px 45px;
+	padding: 20px 45px 0;
+	animation: bottom-1 1.0s 2s ease-in forwards;
+	height: 0;
 }
 .bottom .name{
 	text-align: center;
 	font-weight: bold;
-	margin-bottom: 20px;
+	animation: bottom-2 1.5s 2s ease-in forwards;
+	line-height: 60px;
+	transform: scale(0);
 }
 .bottom .music{
-	margin-bottom: 5px;
+	animation: bottom-3 1.0s 2.5s ease-in forwards;
+	height: 0;
 }

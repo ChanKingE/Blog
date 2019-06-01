@@ -2,16 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>无标题文档</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/left.css" rel="stylesheet" type="text/css">
-<link href="css/right.css" rel="stylesheet" type="text/css">
+<!-- TemplateEndEditable -->
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/left.css" rel="stylesheet" type="text/css">
+<link href="../css/right.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 
 <body>
 <div id="box">	
 	<div id="left">
-		<div class="top"><a href="index.html">不会设计的秃头怪</a></div>
+		<div class="top"><a href="../index.html">不会设计的秃头怪</a></div>
 		<div class="center">
 			<p><a href="#">home</a><span class="tips">首页</span><span class="drop">●</span></p>
 			<p><a href="#">Work</a><span class="tips">作业</span><span class="drop">●</span></p>
@@ -22,19 +26,13 @@
 		</div>
 		<div id="bufferbar" >
 			<div class="bottom">
-				<img src="icon/icon.jpg" alt="" width="150" height="150" class="icon"/ >
+				<img src="../icon/icon.jpg" alt="" width="150" height="150" class="icon"/ >
 				<div class="name">ChanKingE</div>
 				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=240 height=86 src="https://music.163.com/outchain/player?type=2&id=478303470&auto=0&height=66" class="music"></iframe>
 			</div>
 		</div>
 	</div>
 	<div id="right">
-		<div class="box">
-			<div class="title"><a href="#">标题</a></div>
-		</div>
-		<div class="box">
-			<div class="title">标题</div>
-		</div>
 		<div class="box">
 			<div class="title">标题</div>
 		</div>

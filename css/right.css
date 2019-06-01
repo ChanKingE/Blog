@@ -12,6 +12,25 @@
 .title{
 	text-align: center;
 	font-size: 30px;
-	font-weight: 600;
+	font-weight: 500;
 	padding-top: 40px;
+}
+.title a,a:link{
+    position:relative;
+    padding: 5px 10px;
+}
+.title a:after{
+	content: "";
+	width: 0;
+	
+	height: 2px;
+	background-color: #000000;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transition: all .2s;
+}
+.title a:hover:after,a.active:after{
+    left: 0;
+    width: 100%;
 }
